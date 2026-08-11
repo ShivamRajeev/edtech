@@ -8,6 +8,10 @@ function validateMobile(mobileNumber) {
   return /^[0-9]{10}$/.test(mobileNumber.trim());
 }
 
+function validateEmail(emailAddress) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(emailAddress.trim());
+}
+
 async function submitToGoogleSheet(payload) {
   if (GOOGLE_SHEET_WEB_APP_URL.includes("REPLACE_WITH")) {
     await new Promise((resolve) => setTimeout(resolve, 500));
@@ -29,6 +33,24 @@ async function submitToGoogleSheet(payload) {
 }
 
 export default function ContactEnquiryForm({ idPrefix = "contact", onSuccess, className = "" }) {
+  const requiredFields = [
+    "fullName",
+    "mobileNumber",
+    "emailAddress",
+    "qualification",
+    "interestedProgram",
+    "preferredMode"
+  ];
+
+  const fieldLabels = {
+    fullName: "Full Name",
+    mobileNumber: "Mobile Number",
+    emailAddress: "Email Address",
+    qualification: "Highest Qualification",
+    interestedProgram: "Interested Program",
+    preferredMode: "Preferred Mode"
+  };
+
   const [form, setForm] = useState({
     fullName: "",
     mobileNumber: "",
@@ -39,33 +61,48 @@ export default function ContactEnquiryForm({ idPrefix = "contact", onSuccess, cl
     message: ""
   });
   const [status, setStatus] = useState({ text: "", type: "" });
+  const [fieldErrors, setFieldErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const onChange = (event) => {
     const { name, value } = event.target;
     setForm((prev) => ({ ...prev, [name]: value }));
+    setFieldErrors((prev) => {
+      if (!prev[name]) {
+        return prev;
+      }
+      const next = { ...prev };
+      delete next[name];
+      return next;
+    });
   };
 
   const onSubmit = async (event) => {
     event.preventDefault();
 
-    if (!validateMobile(form.mobileNumber)) {
-      setStatus({ text: "Please enter a valid 10-digit mobile number.", type: "error" });
+    const nextErrors = {};
+
+    requiredFields.forEach((field) => {
+      if (!form[field]?.trim()) {
+        nextErrors[field] = `${fieldLabels[field]} is required.`;
+      }
+    });
+
+    if (form.mobileNumber && !validateMobile(form.mobileNumber)) {
+      nextErrors.mobileNumber = "Please enter a valid 10-digit mobile number.";
+    }
+
+    if (form.emailAddress && !validateEmail(form.emailAddress)) {
+      nextErrors.emailAddress = "Please enter a valid email address.";
+    }
+
+    if (Object.keys(nextErrors).length > 0) {
+      setFieldErrors(nextErrors);
+      setStatus({ text: "", type: "" });
       return;
     }
 
-    if (
-      !form.fullName ||
-      !form.mobileNumber ||
-      !form.emailAddress ||
-      !form.qualification ||
-      !form.interestedProgram ||
-      !form.preferredMode
-    ) {
-      setStatus({ text: "Please complete all required fields.", type: "error" });
-      return;
-    }
-
+    setFieldErrors({});
     setIsSubmitting(true);
     setStatus({ text: "", type: "" });
 
@@ -101,7 +138,7 @@ export default function ContactEnquiryForm({ idPrefix = "contact", onSuccess, cl
 
   return (
     <form onSubmit={onSubmit} noValidate className={className}>
-      <label htmlFor={`${idPrefix}-fullName`}>Full Name</label>
+      <label htmlFor={`${idPrefix}-fullName`}>Full Name *</label>
       <input
         id={`${idPrefix}-fullName`}
         name="fullName"
@@ -110,9 +147,12 @@ export default function ContactEnquiryForm({ idPrefix = "contact", onSuccess, cl
         placeholder="Enter your full name"
         value={form.fullName}
         onChange={onChange}
+        aria-invalid={Boolean(fieldErrors.fullName)}
+        className={fieldErrors.fullName ? "input-error" : ""}
       />
+      {fieldErrors.fullName ? <p className="field-error">{fieldErrors.fullName}</p> : null}
 
-      <label htmlFor={`${idPrefix}-mobileNumber`}>Mobile Number</label>
+      <label htmlFor={`${idPrefix}-mobileNumber`}>Mobile Number *</label>
       <input
         id={`${idPrefix}-mobileNumber`}
         name="mobileNumber"
@@ -122,9 +162,12 @@ export default function ContactEnquiryForm({ idPrefix = "contact", onSuccess, cl
         placeholder="10-digit mobile number"
         value={form.mobileNumber}
         onChange={onChange}
+        aria-invalid={Boolean(fieldErrors.mobileNumber)}
+        className={fieldErrors.mobileNumber ? "input-error" : ""}
       />
+      {fieldErrors.mobileNumber ? <p className="field-error">{fieldErrors.mobileNumber}</p> : null}
 
-      <label htmlFor={`${idPrefix}-emailAddress`}>Email Address</label>
+      <label htmlFor={`${idPrefix}-emailAddress`}>Email Address *</label>
       <input
         id={`${idPrefix}-emailAddress`}
         name="emailAddress"
@@ -133,9 +176,12 @@ export default function ContactEnquiryForm({ idPrefix = "contact", onSuccess, cl
         placeholder="Enter your email address"
         value={form.emailAddress}
         onChange={onChange}
+        aria-invalid={Boolean(fieldErrors.emailAddress)}
+        className={fieldErrors.emailAddress ? "input-error" : ""}
       />
+      {fieldErrors.emailAddress ? <p className="field-error">{fieldErrors.emailAddress}</p> : null}
 
-      <label htmlFor={`${idPrefix}-qualification`}>Highest Qualification</label>
+      <label htmlFor={`${idPrefix}-qualification`}>Highest Qualification *</label>
       <input
         id={`${idPrefix}-qualification`}
         name="qualification"
@@ -144,15 +190,20 @@ export default function ContactEnquiryForm({ idPrefix = "contact", onSuccess, cl
         placeholder="Example: B.Com, B.Tech, MBA"
         value={form.qualification}
         onChange={onChange}
+        aria-invalid={Boolean(fieldErrors.qualification)}
+        className={fieldErrors.qualification ? "input-error" : ""}
       />
+      {fieldErrors.qualification ? <p className="field-error">{fieldErrors.qualification}</p> : null}
 
-      <label htmlFor={`${idPrefix}-interestedProgram`}>Interested Program</label>
+      <label htmlFor={`${idPrefix}-interestedProgram`}>Interested Program *</label>
       <select
         id={`${idPrefix}-interestedProgram`}
         name="interestedProgram"
         required
         value={form.interestedProgram}
         onChange={onChange}
+        aria-invalid={Boolean(fieldErrors.interestedProgram)}
+        className={fieldErrors.interestedProgram ? "input-error" : ""}
       >
         <option value="">Select Program</option>
         {contactPrograms.map((program) => (
@@ -161,21 +212,25 @@ export default function ContactEnquiryForm({ idPrefix = "contact", onSuccess, cl
           </option>
         ))}
       </select>
+      {fieldErrors.interestedProgram ? <p className="field-error">{fieldErrors.interestedProgram}</p> : null}
 
-      <label htmlFor={`${idPrefix}-preferredMode`}>Preferred Mode</label>
+      <label htmlFor={`${idPrefix}-preferredMode`}>Preferred Mode *</label>
       <select
         id={`${idPrefix}-preferredMode`}
         name="preferredMode"
         required
         value={form.preferredMode}
         onChange={onChange}
+        aria-invalid={Boolean(fieldErrors.preferredMode)}
+        className={fieldErrors.preferredMode ? "input-error" : ""}
       >
         <option value="">Select Mode</option>
         <option value="Classroom">Classroom</option>
         <option value="Live Online">Live Online</option>
       </select>
+      {fieldErrors.preferredMode ? <p className="field-error">{fieldErrors.preferredMode}</p> : null}
 
-      <label htmlFor={`${idPrefix}-message`}>Message</label>
+      <label htmlFor={`${idPrefix}-message`}>Message (Optional)</label>
       <textarea
         id={`${idPrefix}-message`}
         name="message"

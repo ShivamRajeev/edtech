@@ -966,6 +966,22 @@ textarea:focus {
   margin-top: 0.58rem;
 }
 
+.input-error {
+  border-color: #dc2626;
+}
+
+.input-error:focus {
+  outline: 2px solid rgba(220, 38, 38, 0.18);
+  border-color: #dc2626;
+}
+
+.field-error {
+  margin: 0.12rem 0 0.2rem;
+  color: #dc2626;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(18px);
