@@ -1,6 +1,6 @@
 import FallbackImage from "../shared/FallbackImage";
 
-export default function FeaturedProgramSection() {
+export default function FeaturedProgramSection({ onApplyNow }) {
   return (
     <section className="section featured-program-section">
       <div className="container featured-wrap">
@@ -23,9 +23,9 @@ export default function FeaturedProgramSection() {
             <li>Mode: Classroom / Live Online</li>
             <li>Fee: Rs. 50,000</li>
           </ul>
-          <a className="btn btn-primary" href="#contact">
+          <button type="button" className="btn btn-primary" onClick={onApplyNow}>
             Apply Now
-          </a>
+          </button>
         </div>
       </div>
     </section>

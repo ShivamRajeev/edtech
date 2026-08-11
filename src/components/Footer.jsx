@@ -1,4 +1,6 @@
-export default function Footer() {
+import { Link } from "react-router-dom";
+
+export default function Footer({ onApplyNow }) {
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
@@ -13,16 +15,18 @@ export default function Footer() {
           <h4>Quick Links</h4>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#about">About Us</a>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
-              <a href="#programs">Programs</a>
+              <Link to="/programs">Programs</Link>
             </li>
             <li>
-              <a href="#contact">Apply Now</a>
+              <button type="button" className="footer-link-button" onClick={onApplyNow}>
+                Apply Now
+              </button>
             </li>
           </ul>
         </div>

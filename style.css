@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --navy-900: #0b1f3b;
   --navy-800: #12315d;
@@ -862,6 +866,20 @@ textarea:focus {
   color: #c2d2ec;
 }
 
+.footer-link-button {
+  background: transparent;
+  border: 0;
+  color: #c2d2ec;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.footer-link-button:hover,
+.footer-link-button:focus-visible {
+  color: #ffffff;
+}
+
 .footer-bottom {
   margin-top: 1.6rem;
   padding-top: 1rem;
@@ -884,6 +902,68 @@ textarea:focus {
   font-weight: 800;
   padding: 0.78rem 1rem;
   box-shadow: 0 12px 24px rgba(30, 190, 103, 0.35);
+}
+
+.mobile-action-bar button {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.contact-modal-card {
+  scrollbar-width: thin;
+}
+
+.contact-form-compact {
+  display: grid;
+  gap: 0.38rem;
+}
+
+.contact-form-compact label {
+  font-size: 0.82rem;
+  margin-top: 0.2rem;
+}
+
+.contact-form-compact input,
+.contact-form-compact select,
+.contact-form-compact textarea {
+  padding: 0.42rem 0.56rem;
+  border-radius: 10px;
+  font-size: 0.83rem;
+}
+
+.contact-form-compact .full {
+  margin-top: 0.5rem;
+  padding: 0.68rem 1rem;
+}
+
+.contact-form-compact .form-note,
+.contact-form-compact .form-status {
+  font-size: 0.78rem;
+}
+
+.contact-form-medium {
+  display: grid;
+  gap: 0.44rem;
+}
+
+.contact-form-medium label {
+  font-size: 0.84rem;
+  margin-top: 0.26rem;
+}
+
+.contact-form-medium input,
+.contact-form-medium select,
+.contact-form-medium textarea {
+  padding: 0.47rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+
+.contact-form-medium .full {
+  margin-top: 0.58rem;
 }
 
 .reveal {
@@ -1495,7 +1575,8 @@ textarea:focus {
     padding-bottom: env(safe-area-inset-bottom);
   }
 
-  .mobile-action-bar a {
+  .mobile-action-bar a,
+  .mobile-action-bar button {
     text-align: center;
     font-size: 0.78rem;
     font-weight: 800;
@@ -1504,7 +1585,8 @@ textarea:focus {
     border-right: 1px solid #e2e9f5;
   }
 
-  .mobile-action-bar a:last-child {
+  .mobile-action-bar a:last-child,
+  .mobile-action-bar button:last-child {
     border-right: 0;
     color: var(--green-600);
   }

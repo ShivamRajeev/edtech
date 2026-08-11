@@ -2,7 +2,7 @@ import { useState } from "react";
 import { flagshipOutcomes, flagshipPlacement, futurePrograms } from "../data/siteData";
 import InteractiveCard from "../shared/InteractiveCard";
 
-export default function ProgramsSection() {
+export default function ProgramsSection({ onApplyNow }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -53,9 +53,9 @@ export default function ProgramsSection() {
               </ul>
             </div>
           </div>
-          <a className="btn btn-primary" href="#contact">
+          <button type="button" className="btn btn-primary" onClick={onApplyNow}>
             Apply Now
-          </a>
+          </button>
         </article>
 
         <div className="program-grid">
@@ -68,7 +68,7 @@ export default function ProgramsSection() {
             >
               <h3>{program.title}</h3>
               <p>{program.text}</p>
-              <a className="text-link" href="#contact">
+              <a className="text-link" href="/contact">
                 Enquire Now
               </a>
             </InteractiveCard>

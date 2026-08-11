@@ -12,18 +12,6 @@ export default function HeroSection() {
           <p className="hero-subtext">
             Industry-focused training, career mentoring, and placement assistance for graduates and early professionals.
           </p>
-          <div className="cta-group">
-            <a className="btn btn-primary" href="#contact">
-              Apply Now
-            </a>
-            <a className="btn btn-secondary" href="#contact">
-              Download Brochure
-            </a>
-            <a className="btn btn-outline" href="#contact">
-              Talk to a Career Advisor
-            </a>
-          </div>
-
           <div className="highlight-tags">
             {highlights.map((item) => (
               <span key={item}>{item}</span>

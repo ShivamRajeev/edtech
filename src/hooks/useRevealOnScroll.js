@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export function useRevealOnScroll() {
+export function useRevealOnScroll(routeKey = "") {
   useEffect(() => {
     const revealElements = document.querySelectorAll(".reveal");
 
@@ -32,5 +32,5 @@ export function useRevealOnScroll() {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [routeKey]);
 }

@@ -1,11 +1,12 @@
 export const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About Us" },
-  { href: "#programs", label: "Programs" },
-  { href: "#why-us", label: "Why Choose Us" },
-  { href: "#placement", label: "Placement Assistance" },
-  { href: "#faqs", label: "FAQs" },
-  { href: "#contact", label: "Contact Us" }
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About Us" },
+  { href: "/founder", label: "Founder" },
+  { href: "/programs", label: "Programs" },
+  { href: "/why-us", label: "Why Choose Us" },
+  { href: "/placement", label: "Placement Assistance" },
+  { href: "/faqs", label: "FAQs" },
+  { href: "/contact", label: "Contact Us" }
 ];
 
 export const highlights = [
