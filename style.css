@@ -112,63 +112,75 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: nowrap;
   min-height: 76px;
   gap: 1.2rem;
 }
 
 .brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.56rem;
+  justify-content: center;
+  gap: 0.2rem;
   flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  line-height: 0;
+  margin-right: 0;
 }
 
-.brand-mark {
+.brand-mark-icon {
   display: block;
-  width: clamp(52px, 4.2vw, 64px);
-  height: clamp(36px, 3vw, 44px);
+  width: auto;
+  height: clamp(28px, 3.2vw, 36px);
+  object-fit: contain;
+  object-position: center;
+  filter: none;
+  transition: transform 0.26s ease;
+}
+
+.brand-logo {
+  display: block;
+  width: auto;
+  height: clamp(38px, 4.1vw, 46px);
   max-height: none;
   object-fit: contain;
-  filter: drop-shadow(0 8px 22px rgba(6, 20, 53, 0.36));
+  object-position: center;
+  filter: none;
   transition: transform 0.26s ease, filter 0.26s ease;
 }
 
-.brand-text {
-  display: grid;
-  line-height: 1.05;
-}
-
-.brand-text strong {
-  font-family: "Sora", sans-serif;
-  font-size: clamp(1rem, 1.35vw, 1.26rem);
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: #3fd0ff;
-  text-transform: uppercase;
-}
-
-.brand-text small {
-  margin-top: 0.16rem;
-  font-size: clamp(0.44rem, 0.62vw, 0.56rem);
-  letter-spacing: 0.085em;
-  text-transform: uppercase;
-  color: #dfe9ff;
-}
-
-.brand:hover .brand-mark,
-.brand:focus-visible .brand-mark {
+.brand:hover .brand-logo,
+.brand:focus-visible .brand-logo {
   transform: translateY(-1px) scale(1.015);
-  filter: drop-shadow(0 10px 26px rgba(12, 79, 176, 0.34));
+  filter: none;
+}
+
+.brand:hover .brand-mark-icon,
+.brand:focus-visible .brand-mark-icon {
+  transform: translateY(-1px) scale(1.015);
 }
 
 .site-nav {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 1.3rem;
   margin-left: auto;
 }
 
 .site-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  line-height: 1.1;
+  white-space: nowrap;
   color: #e7eef9;
   font-size: 0.93rem;
   font-weight: 600;
@@ -1011,17 +1023,20 @@ textarea:focus {
 }
 
 @media (max-width: 1120px) {
-  .brand-mark {
-    width: clamp(46px, 6.8vw, 56px);
-    height: clamp(32px, 4.9vw, 40px);
+  .brand {
+    width: auto;
+    height: auto;
+    padding: 0;
   }
 
-  .brand-text strong {
-    font-size: clamp(0.92rem, 2.1vw, 1.08rem);
+  .brand-logo {
+    width: auto;
+    height: clamp(32px, 5.2vw, 40px);
   }
 
-  .brand-text small {
-    font-size: clamp(0.42rem, 0.95vw, 0.52rem);
+  .brand-mark-icon {
+    width: auto;
+    height: clamp(24px, 4.2vw, 30px);
   }
 
   .site-nav {
@@ -1039,6 +1054,8 @@ textarea:focus {
   }
 
   .site-nav a {
+    min-height: 0;
+    white-space: normal;
     padding: 0.8rem 1.1rem;
   }
 
@@ -1563,17 +1580,20 @@ textarea:focus {
     top: 0;
   }
 
-  .brand-mark {
-    width: clamp(42px, 10vw, 50px);
-    height: clamp(30px, 7vw, 36px);
+  .brand {
+    width: auto;
+    height: auto;
+    padding: 0;
   }
 
-  .brand-text strong {
-    font-size: clamp(0.82rem, 4.2vw, 0.96rem);
+  .brand-logo {
+    width: auto;
+    height: clamp(26px, 7.2vw, 32px);
   }
 
-  .brand-text small {
-    display: none;
+  .brand-mark-icon {
+    width: auto;
+    height: clamp(18px, 5.5vw, 24px);
   }
 
   .nav-wrap {
