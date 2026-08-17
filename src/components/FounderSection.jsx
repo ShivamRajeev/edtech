@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import FallbackImage from "../shared/FallbackImage";
 
 const founderBio = [
-  "Mrs. Sarika founded CareerSpring with a clear purpose: bridge the gap between academic learning and the fast-evolving expectations of employers. After over 15 years in talent development and workforce strategy, she recognized that many learners had potential but lacked structured, industry-aligned mentorship.",
+  "Mrs. Sarika founded Career Dekho with a clear purpose: bridge the gap between academic learning and the fast-evolving expectations of employers. After over 15 years in talent development and workforce strategy, she recognized that many learners had potential but lacked structured, industry-aligned mentorship.",
   "Before launching the institute, Mrs. Sarika led large-scale learning transformation programs for BFSI, technology, and service organizations. Her work focused on building practical capability frameworks that improved candidate confidence, communication, and role readiness from day one.",
-  "At CareerSpring, she has architected a pedagogy that combines domain fundamentals, scenario-based simulations, interview preparation, and continuous mentoring. This integrated approach ensures students do not just complete courses, but develop measurable professional competence.",
+  "At Career Dekho, she has architected a pedagogy that combines domain fundamentals, scenario-based simulations, interview preparation, and continuous mentoring. This integrated approach ensures students do not just complete courses, but develop measurable professional competence.",
   "She is also deeply committed to learner equity and employability. Through scholarship-linked initiatives and regional outreach, she has helped first-generation graduates and early professionals access high-quality career pathways in competitive job markets.",
   "Today, Mrs. Sarika continues to guide the academic board, faculty design standards, and placement strategy, ensuring every program reflects excellence, relevance, and student outcomes."
 ];
@@ -214,7 +214,7 @@ export default function FounderSection() {
                 <XIcon />
               </a>
               <a
-                href="mailto:founder@careerspring.in"
+                href="mailto:founder@careerdekho.in"
                 aria-label="Email founder"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 bg-white text-academy-800 transition hover:-translate-y-0.5 hover:border-sky-300 hover:text-sky-600"
               >

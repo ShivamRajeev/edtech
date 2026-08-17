@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { navLinks } from "../data/siteData";
+import brandMark from "../assets/career-dekho-mark.svg";
 
 export default function Header({ onApplyNow }) {
   const [open, setOpen] = useState(false);
@@ -8,11 +9,11 @@ export default function Header({ onApplyNow }) {
   return (
     <header className="site-header" id="top">
       <div className="container nav-wrap">
-        <Link className="brand" to="/" aria-label="CareerSpring Home">
-          <span className="logo-mark">CS</span>
+        <Link className="brand" to="/" aria-label="Career Dekho Home">
+          <img className="brand-mark" src={brandMark} alt="" aria-hidden="true" />
           <span className="brand-text">
-            <strong>CareerSpring</strong>
-            <small>Training & Placement</small>
+            <strong>Career Dekho</strong>
+            <small>Learn . Prepare . Get Hired</small>
           </span>
         </Link>
 

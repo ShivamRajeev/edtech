@@ -3,7 +3,7 @@ export default function FloatingActions({ onApplyNow }) {
     <>
       <a
         className="whatsapp-float"
-        href="https://wa.me/919000000000?text=Hi%20CareerSpring%2C%20I%20want%20career%20guidance."
+        href="https://wa.me/919000000000?text=Hi%20Career%20Dekho%2C%20I%20want%20career%20guidance."
         target="_blank"
         rel="noopener"
         aria-label="Chat on WhatsApp"
@@ -19,7 +19,7 @@ export default function FloatingActions({ onApplyNow }) {
           Talk to Advisor
         </button>
         <a
-          href="https://wa.me/919000000000?text=Hi%20CareerSpring%2C%20I%20want%20career%20guidance."
+          href="https://wa.me/919000000000?text=Hi%20Career%20Dekho%2C%20I%20want%20career%20guidance."
           target="_blank"
           rel="noopener"
         >

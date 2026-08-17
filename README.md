@@ -1,4 +1,4 @@
-# CareerSpring EdTech Website
+# Career Dekho Website
 
 Modern, responsive website for a Career Training and Placement Company offering job-oriented courses, interview preparation, and placement assistance.
 
