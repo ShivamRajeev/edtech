@@ -105,10 +105,12 @@ export const flagshipOutcomes = [
 
 export const flagshipPlacement = [
   "Career counselling",
-  "Resume preparation",
+  "Resume & profile preparation",
   "Interview preparation",
-  "Employer interview coordination",
-  "Joining support"
+  "Mock interview and feedback",
+  "Job opportunity sharing",
+  "Interview co-ordination",
+  "Joining guidance"
 ];
 
 export const futurePrograms = [
