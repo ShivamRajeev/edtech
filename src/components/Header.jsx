@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { navLinks } from "../data/siteData";
-import brandMark from "../assets/career-dekho-mark.svg";
-import brandLogo from "../assets/career-dekho-wordmark.svg";
+import logo from "/images/logo.webp";
 
 export default function Header({ onApplyNow }) {
   const [open, setOpen] = useState(false);
@@ -11,8 +10,12 @@ export default function Header({ onApplyNow }) {
     <header className="site-header" id="top">
       <div className="container nav-wrap">
         <Link className="brand" to="/" aria-label="Career Dekho Home">
-          <img className="brand-mark-icon" src={brandMark} alt="" aria-hidden="true" />
-          <img className="brand-logo" src={brandLogo} alt="Career Dekho - Learn. Prepare. Get Hired" />
+          <img className="brand-logo" src={logo} alt="Career Dekho - Learn. Prepare. Get Hired" style={{ width: "70px", height: "auto" }} />
+          <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+            <span style={{ fontSize: "23px", fontWeight: "800", color: "#1577d8", lineHeight: "1.2" }}>CAREER</span>
+            <span style={{ fontSize: "26px", fontWeight: "800", color: "#f97316", lineHeight: "1.2" }}>DEKHO</span>
+            <span style={{ fontSize: "9px", fontWeight: "500", color: "#ffffff", lineHeight: "1.2", marginTop: "2px" }}>-Upgrade Your Career-</span>
+          </div>
         </Link>
 
         <button
