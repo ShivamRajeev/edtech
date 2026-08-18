@@ -10,7 +10,7 @@ export const navLinks = [
 ];
 
 export const highlights = [
-  "Job-Oriented Training",
+  "Industry-Oriented Training",
   "Career Mentoring",
   "Mock Interviews",
   "Placement Assistance",
@@ -132,36 +132,36 @@ export const futurePrograms = [
 
 export const whyChooseUs = [
   {
-    title: "Industry-Oriented Curriculum",
-    text: "Training modules designed around real hiring demands and workplace expectations."
+    title: "Industry-Relevant Curriculum",
+    text: "Training  designed around real job roles, hiring expectations and workspace skills."
   },
   {
-    title: "Experienced Trainers",
-    text: "Learn from professionals with strong domain and coaching experience."
+    title: "Experienced Industry Trainers",
+    text: "Learn from professionals who understand real workplace expectations, hiring and carreer growth."
   },
   {
-    title: "Practical Learning",
-    text: "Hands-on assignments, role-plays, and scenario-based exercises."
+    title: "Practical, Job-Ready Learning",
+    text: "Hands-on assignments, role-plays, simulations and  real-world scenario to build workplace confidence."
   },
   {
-    title: "Mock Interviews",
-    text: "Structured mock rounds with actionable feedback and confidence tracking."
+    title: "Interview Preparation",
+    text: "Mock interviews, interview practice and actionable feedback to improve confidence and performance."
   },
   {
-    title: "Career Mentoring",
-    text: "Guidance on role selection, career direction, and growth strategy."
+    title: "Personalized Career Mentoring",
+    text: "Guidance on career path, job roles , interview preparation and professional growth."
   },
   {
-    title: "Placement Assistance",
-    text: "Support through profile readiness, interviews, and joining steps."
+    title: "Placement Support",
+    text: "Support with profile building, job oppurtunities, interview and joining processes."
   },
   {
     title: "Professional Development",
-    text: "Improve communication, etiquette, and workplace behavior for long-term success."
+    text: "Build communication workplace etiquette, confidence and professional behaviour for long-term career growth."
   },
   {
-    title: "Student-Centric Support",
-    text: "High-touch mentorship and responsive learner support throughout training."
+    title: "Dedicated Learner Support",
+    text: "Get continuous guidance and support throughout your training and carrer preparation journey."
   }
 ];
 
