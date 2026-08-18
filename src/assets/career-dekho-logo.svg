@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="92 12 576 294" preserveAspectRatio="xMinYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Career Dekho Logo</title>
+  <desc id="desc">Graduation cap logo with arrow and tagline Learn. Prepare. Get Hired.</desc>
+
+  <defs>
+    <linearGradient id="capTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#44C2FF"/>
+      <stop offset="55%" stop-color="#2A8FFF"/>
+      <stop offset="100%" stop-color="#1D65D8"/>
+    </linearGradient>
+    <linearGradient id="capBand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B4DB8"/>
+      <stop offset="100%" stop-color="#2F7AF0"/>
+    </linearGradient>
+    <linearGradient id="bodyLeft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFB23F"/>
+      <stop offset="100%" stop-color="#FF8A18"/>
+    </linearGradient>
+    <linearGradient id="bodyMid" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD64A"/>
+      <stop offset="100%" stop-color="#FFB62A"/>
+    </linearGradient>
+    <linearGradient id="bodyRight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF8F2A"/>
+      <stop offset="100%" stop-color="#F66A11"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(96 14)">
+    <polygon points="214,8 34,90 214,170 394,90" fill="url(#capTop)"/>
+    <polygon points="214,44 76,108 214,170 352,108" fill="#4FB8FF" opacity="0.35"/>
+
+    <polygon points="82,108 214,166 346,108 346,118 214,177 82,118" fill="url(#capBand)"/>
+
+    <polygon points="140,118 214,152 288,118 288,214 214,244 140,214" fill="url(#bodyMid)"/>
+    <polygon points="140,118 214,152 214,244 140,214" fill="url(#bodyLeft)"/>
+    <polygon points="214,152 288,118 288,214 214,244" fill="url(#bodyRight)"/>
+
+    <path d="M218 103c47-10 81-10 127 0" fill="none" stroke="#FFE7B2" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="218" cy="103" r="8" fill="#2F7AF0"/>
+    <path d="M91 113c-16 5-27 16-27 31v38" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+    <rect x="57" y="182" width="16" height="37" rx="8" fill="#FFBD2E"/>
+
+    <path d="M342 37l47-22l-14 47l-15-15l-18 35l-17-5l17-33z" fill="#FFAD2E"/>
+  </g>
+
+  <text x="380" y="264" text-anchor="middle" fill="#3FD0FF" font-family="Georgia, 'Times New Roman', serif" font-size="66" letter-spacing="4">
+    CAREER DEKHO
+  </text>
+  <text x="380" y="298" text-anchor="middle" fill="#EAF2FF" font-family="'Trebuchet MS', Arial, sans-serif" font-size="30" letter-spacing="2">
+    LEARN. PREPARE. GET HIRED.
+  </text>
+</svg>

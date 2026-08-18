@@ -5,7 +5,7 @@ export default function Footer({ onApplyNow }) {
     <footer className="site-footer">
       <div className="container footer-grid">
         <div>
-          <h3>CareerSpring</h3>
+          <h3>Career Dekho</h3>
           <p>
             Career training for graduates with practical programs, interview preparation, and professional placement
             assistance.
@@ -34,7 +34,7 @@ export default function Footer({ onApplyNow }) {
           <h4>Contact</h4>
           <ul>
             <li>+91 90000 00000</li>
-            <li>admissions@careerspring.in</li>
+            <li>admissions@careerdekho.in</li>
             <li>Your City, India</li>
           </ul>
         </div>
@@ -64,7 +64,7 @@ export default function Footer({ onApplyNow }) {
           Placement assistance is subject to successful course completion, student performance, eligibility criteria,
           and hiring partner requirements.
         </p>
-        <p>© {new Date().getFullYear()} CareerSpring Training & Placement. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Career Dekho. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -11,14 +11,14 @@ export default function ContactSection() {
 
           <ul className="contact-list">
             <li>
-              <strong>Office Address:</strong> CareerSpring Training Centre, Floor 3, Business Hub, Your City, State
+              <strong>Office Address:</strong> Career Dekho Training Centre, Floor 3, Business Hub, Your City, State
               - 000000
             </li>
             <li>
               <strong>Phone:</strong> +91 90000 00000
             </li>
             <li>
-              <strong>Email:</strong> admissions@careerspring.in
+              <strong>Email:</strong> admissions@careerdekho.in
             </li>
           </ul>
 

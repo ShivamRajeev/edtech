@@ -1,5 +1,6 @@
 import FallbackImage from "../shared/FallbackImage";
 import { heroTrustItems, highlights } from "../data/siteData";
+import heroTrainingImage from "../assets/hero-training.jpg";
 
 export default function HeroSection() {
   return (
@@ -27,7 +28,7 @@ export default function HeroSection() {
 
         <div className="hero-media reveal">
           <FallbackImage
-            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=80"
+            src={heroTrainingImage}
             alt="Students attending a professional career training workshop"
           />
           <div className="floating-badge">Admissions Open for New Batch</div>
