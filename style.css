@@ -585,6 +585,10 @@ ul {
   margin: 0.4rem 0;
 }
 
+.program-audience-heading {
+  margin-top: 4rem;
+}
+
 .program-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

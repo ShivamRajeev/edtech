@@ -44,7 +44,7 @@ export default function ProgramsSection({ onApplyNow }) {
                   <li key={item}>{item}</li>
                 ))}
               </ul>
-            <h3>Who is this Program For?</h3>
+              <h3 className="program-audience-heading">Who is this Program For?</h3>
             </div>
             <div>
               <h4>Career & Placement Support</h4>
