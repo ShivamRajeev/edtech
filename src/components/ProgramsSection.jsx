@@ -10,20 +10,21 @@ export default function ProgramsSection({ onApplyNow }) {
       <div className="container">
         <div className="section-head reveal">
           <p className="eyebrow">Programs</p>
-          <h2>Placement Assistance Program with Job-Oriented Learning</h2>
-          <p>Explore practical training tracks designed for freshers and early professionals.</p>
+          <h2>Career Training Programs Built for Job Readiness</h2>
+          <p>Practical training designed to help graduates and early professionals build job-ready skills and prepare for career opportunities</p>
         </div>
 
         <article className="program-card flagship reveal">
           <div className="program-tag">Flagship Program</div>
           <div className="program-top">
-            <h3>Certified Banking Sales Career Accelerator Program</h3>
+            <h3>Banking Sales Career Accelerator Program</h3>
+            <h4>Certificates of Compeletion from CareerDekho</h4>
             <div className="program-meta">
               <span>
                 <strong>Duration:</strong> 21 Days
               </span>
               <span>
-                <strong>Mode:</strong> Classroom / Live Online
+                <strong>Mode:</strong> Live Online
               </span>
               <span>
                 <strong>Fee:</strong> Rs. 50,000
@@ -43,9 +44,10 @@ export default function ProgramsSection({ onApplyNow }) {
                   <li key={item}>{item}</li>
                 ))}
               </ul>
+            <h3>Who is this Program For?</h3>
             </div>
             <div>
-              <h4>Placement Assistance Includes</h4>
+              <h4>Career & Placement Support</h4>
               <ul>
                 {flagshipPlacement.map((item) => (
                   <li key={item}>{item}</li>
