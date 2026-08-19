@@ -10,12 +10,12 @@ export const navLinks = [
 ];
 
 export const highlights = [
-  "Industry-Oriented Training",
+  "Job-Ready Training",
   "Career Mentoring",
   "Mock Interviews",
-  "Placement Assistance",
+  "Placement Support",
   "Practical Learning",
-  "Industry-Focused Curriculum"
+  "Industry-Relevant Curriculum"
 ];
 
 export const heroTrustItems = [

@@ -236,11 +236,11 @@ export default function FounderSection() {
             <div className="absolute -bottom-8 right-8 h-28 w-28 rounded-full border border-white/70 bg-sky-100/60" />
 
             <div className="relative flex w-full items-start justify-center rounded-[36px] bg-gradient-to-br from-[#edf6ff] via-white to-[#e9f6f2] p-4 md:p-7">
-              <div className="aspect-[4/5] w-full max-w-[560px] overflow-hidden rounded-[30px] shadow-premium">
+              <div className="aspect-[3/4] w-full max-w-[460px] overflow-hidden rounded-[30px] bg-slate-100 shadow-premium">
                 <FallbackImage
                   src={founderImage}
                   alt="Founder portrait"
-                  className="h-full w-full object-cover object-center"
+                  className="founder-portrait h-full w-full object-contain object-center"
                 />
               </div>
             </div>
