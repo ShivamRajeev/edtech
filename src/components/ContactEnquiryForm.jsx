@@ -63,6 +63,7 @@ export default function ContactEnquiryForm({ idPrefix = "contact", onSuccess, cl
   const [status, setStatus] = useState({ text: "", type: "" });
   const [fieldErrors, setFieldErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccessOpen, setIsSuccessOpen] = useState(false);
 
   const onChange = (event) => {
     const { name, value } = event.target;
@@ -125,7 +126,8 @@ export default function ContactEnquiryForm({ idPrefix = "contact", onSuccess, cl
         preferredMode: "",
         message: ""
       });
-      setStatus({ text: "Thank you. Your enquiry has been submitted successfully.", type: "success" });
+      setStatus({ text: "", type: "" });
+      setIsSuccessOpen(true);
       if (onSuccess) {
         onSuccess();
       }
@@ -241,12 +243,33 @@ export default function ContactEnquiryForm({ idPrefix = "contact", onSuccess, cl
       ></textarea>
 
       <button className="btn btn-primary full" type="submit" disabled={isSubmitting}>
-        {isSubmitting ? "Submitting..." : "Submit"}
+        {isSubmitting ? "Submitting..." : "Request a Callback"}
       </button>
       <p className="form-note">By submitting this form, you agree to be contacted by our admissions team.</p>
       <p className={`form-status ${status.type}`.trim()} aria-live="polite">
         {status.text}
       </p>
+
+      {isSuccessOpen ? (
+        <div
+          className="form-success-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby={`${idPrefix}-success-title`}
+          onClick={() => setIsSuccessOpen(false)}
+        >
+          <div className="form-success-popup" onClick={(event) => event.stopPropagation()}>
+            <div className="form-success-icon" aria-hidden="true">
+              ✓
+            </div>
+            <h3 id={`${idPrefix}-success-title`}>Request submitted</h3>
+            <p>Your request has been submitted successfully. Our team will connect with you shortly.</p>
+            <button type="button" className="btn btn-primary" onClick={() => setIsSuccessOpen(false)}>
+              Done
+            </button>
+          </div>
+        </div>
+      ) : null}
     </form>
   );
 }

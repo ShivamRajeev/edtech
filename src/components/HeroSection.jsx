@@ -1,6 +1,6 @@
-import FallbackImage from "../shared/FallbackImage";
-import { heroTrustItems, highlights } from "../data/siteData";
 import heroTrainingImage from "../assets/hero-training.jpg";
+import { heroTrustItems, highlights } from "../data/siteData";
+import FallbackImage from "../shared/FallbackImage";
 
 export default function HeroSection() {
   return (
@@ -9,9 +9,9 @@ export default function HeroSection() {
       <div className="container hero-grid">
         <div className="hero-content reveal">
           <p className="eyebrow">Career Training For Graduates</p>
-          <h1>Launch Your Career with Confidence</h1>
+          <h2>Learn. Prepare. Get Hired.</h2>
           <p className="hero-subtext">
-            Industry-focused training, career mentoring, and placement assistance for graduates and early professionals.
+            Industry-relevant career training, practical learning, and placement support for graduates and early-career professionals.
           </p>
           <div className="highlight-tags">
             {highlights.map((item) => (
