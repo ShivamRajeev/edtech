@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import founderImage from "../assets/WhatsApp Image 2026-08-19 at 3.03.19 PM (3).jpg";
 import FallbackImage from "../shared/FallbackImage";
 
 const founderBio = [
@@ -237,7 +238,7 @@ export default function FounderSection() {
             <div className="relative flex w-full items-start justify-center rounded-[36px] bg-gradient-to-br from-[#edf6ff] via-white to-[#e9f6f2] p-4 md:p-7">
               <div className="aspect-[4/5] w-full max-w-[560px] overflow-hidden rounded-[30px] shadow-premium">
                 <FallbackImage
-                  src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80"
+                  src={founderImage}
                   alt="Founder portrait"
                   className="h-full w-full object-cover object-center"
                 />

@@ -10,11 +10,11 @@ export default function Header({ onApplyNow }) {
     <header className="site-header" id="top">
       <div className="container nav-wrap">
         <Link className="brand" to="/" aria-label="Career Dekho Home">
-          <img className="brand-logo" src={logo} alt="Career Dekho - Learn. Prepare. Get Hired" style={{ width: "70px", height: "auto" }} />
-          <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
-            <span style={{ fontSize: "23px", fontWeight: "800", color: "#1577d8", lineHeight: "1.2" }}>CAREER</span>
-            <span style={{ fontSize: "26px", fontWeight: "800", color: "#f97316", lineHeight: "1.2" }}>DEKHO</span>
-            <span style={{ fontSize: "9px", fontWeight: "500", color: "#ffffff", lineHeight: "1.2", marginTop: "2px" }}>-Upgrade Your Career-</span>
+          <img className="brand-logo" src={logo} alt="Career Dekho - Learn. Prepare. Get Hired" style={{ width: "60px", height: "auto" }} />
+          <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", gap: "-2px" }}>
+            <span style={{ fontSize: "17px", fontWeight: "800", color: "#1577d8", lineHeight: "0.9", margin: "0" }}>CAREER</span>
+            <span style={{ fontSize: "21px", fontWeight: "800", color: "#f97316", lineHeight: "0.9", margin: "0" }}>DEKHO</span>
+            <span style={{ fontSize: "7px", fontWeight: "500", color: "#ffffff", lineHeight: "0.9", marginTop: "5px", margin: "2" }}>-Upgrade Your Career-</span>
           </div>
         </Link>
 

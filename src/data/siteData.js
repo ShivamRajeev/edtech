@@ -86,12 +86,11 @@ export const testimonials = [
 ];
 
 export const coreValues = [
-  "Student Success First",
-  "Practical Learning",
-  "Integrity and Transparency",
-  "Career-Focused Training",
-  "Continuous Improvement",
-  "Industry Relevance"
+  "Student Success First : We focus on learner growth, readiness and career outcomes.",
+  "Practical Learning : We emphasize skills and workplace situations that learners can apply in real careers.",
+  "Integrity and Transparency : We communicate clearly about our programs, fees, oppurtunities and placement suport",
+  "Continuous Improvement : We continnuously improve our program based on learner and industry needs.",
+  "Industry Relevance We communicate clearlyabout our programs, fees opportunities and placement support"
 ];
 
 export const flagshipOutcomes = [
@@ -170,21 +169,21 @@ export const whyChooseUs = [
 export const placementSteps = [
   {
     title: "Career Counselling",
-    text: "Understand the student's background, interest, and career goals."
+    text: "Understand the learner's background, interests, skills and career goals to identify suitable career opportunities."
   },
   {
-    title: "Resume Building",
-    text: "Create a professional resume suitable for entry-level hiring opportunities."
+    title: "Resume & Profile Building",
+    text: "Create a professional resume  and optimize your profile for relevant job opportunities."
   },
   {
     title: "Interview Preparation",
     text:
-      "Conduct mock interviews, HR practice, communication improvement, and role-specific preparation."
+      "Mock interviews, HR practice, communication improvement, and role-specific interview preparation."
   },
   {
-    title: "Employer Interviews",
+    title: "Job & Interview Opportunities",
     text:
-      "Share suitable interview opportunities based on program completion, student readiness, and hiring partner requirements."
+      "Share suitable job and interview opportunities based on candidate readiness, eligibility and employer requirements."
   },
   {
     title: "Joining Support",
@@ -194,42 +193,46 @@ export const placementSteps = [
 
 export const faqs = [
   {
-    question: "Who can apply?",
+    question: "Who can apply for the program?",
     answer:
-      "Graduates, final-year students, freshers, and early professionals looking for job-oriented training and placement assistance can apply."
+      "The program is designed for graduates, final-year students, and early professionals who want to build job-ready skills and explore career opputunities in banking financial services, sales and customer-facing roles."
   },
   {
-    question: "Is this program suitable for freshers?",
+    question: "Is the program suitable for freshers and final-year students?",
     answer:
-      "Yes, the program is designed especially for freshers and early professionals who want to become job-ready."
+      "Yes, the program is suitable for freshers and eligible final-year students who want structured career training, practical learning and interview preparation before entering the job market."
   },
   {
-    question: "Is the course online or classroom-based?",
+    question: "What will i learn during the program",
     answer:
-      "The program is available in Classroom and Live Online modes, depending on batch availability."
+      "The program is focus on practical, job-oriented learning, including banking and financial services fundamentals, sales and customer handling, communication and professional etiquette, resume and Linkedin profile development, interview preparation, mock interviews and workplace readiness."
   },
   {
-    question: "What is the fee?",
-    answer: "The fee for the Certified Banking Sales Career Accelerator Program is Rs. 50,000."
+    question: "What is the duration and training mode?",
+    answer: "The flagship Banking Sales Career Accelerator Program is designed as a 21-day program. Training is available through classroom and live-online modes, subject to batch availability and location."
   },
   {
-    question: "What does placement assistance mean?",
+    question: "What is the program fee",
     answer:
-      "Placement assistance includes career counselling, resume building, mock interviews, interview preparation, employer interview coordination, and joining support."
+      "The current program fee for the flagship Banking Sales Career Accelerator Program is Rs 50,000, inclusive of applicable taxes, if stated as such in the final fee structure. Any applicable financing or payment options will be communicated separately."
   },
   {
-    question: "Is job placement guaranteed?",
+    question: "What career oppurtunities can i explore after the program?",
     answer:
-      "Placement assistance is provided, but interview opportunities depend on successful program completion, student performance, eligibility, and hiring partner requirements."
+      "The program prepares learners forrelevant entry-level opportunities in areas such as banking financial services sales, relationship management, customer-facing roles and business development. Actual oppurtunities depend on candidate eligibility, performance, employer requirements and available openings."
   },
   {
-    question: "What documents are required?",
+    question: "What documents are required to apply?",
     answer:
-      "Basic documents such as ID proof, educational certificates, resume, passport-size photo, and any other documents required by hiring partners may be needed."
+      "Applicants may be asked to provide basic documents such as valid identity document, educational qualification certificates or graduation documents,photographs, and other information required for program enrollment or employer processes.Exact requiirements may vary by program and employer."
   },
   {
     question: "Are EMI options available?",
-    answer: "EMI options may be available. Please speak with our career advisor for details."
+    answer: "Financing or EMI options may be available subject to the availablity of approved financing partners, eligibility and applicable terms.Appicants should confirm the current options , eligibility criteria, interest or processing charges  and repayment terms with the CarrerDekho admissions team before enrolment."
+  },
+    {
+    question: "What happens after i complete the training?",
+    answer: "After successful completion of the training, eligible learners receive continued career and placement support, including profile preparation, interview preparation, relevant job or interview oppurtunities and joining guidance. Carrer outcomes depend on the learner's eligibility,performance, employer requirements and available openings."
   }
 ];
 

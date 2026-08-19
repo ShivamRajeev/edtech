@@ -6,8 +6,8 @@ export default function ContactSection() {
       <div className="container contact-grid">
         <div className="contact-info reveal">
           <p className="eyebrow">Contact Us</p>
-          <h2>Connect with a Career Advisor</h2>
-          <p>Have questions about eligibility, fee, or upcoming batches? Send an enquiry and our team will reach out.</p>
+          <h2>Let's Talk About Your Career</h2>
+          <p>Have questions about eligibility, fees, upcoming batches or career oppurtunities? Our career advisiors are here to help. </p>
 
           <ul className="contact-list">
             <li>
@@ -33,8 +33,8 @@ export default function ContactSection() {
         </div>
 
         <div className="form-card reveal">
-          <h3>Enquiry Form</h3>
-          <p>Fill your details and our admissions team will contact you shortly.</p>
+          <h3>Request a Career Consultation</h3>
+          <p>Share your details and our CareerDekho team will get in touch to understand your goals and guide you on the right.</p>
           <ContactEnquiryForm idPrefix="contact-page" className="contact-form-medium" />
         </div>
       </div>
