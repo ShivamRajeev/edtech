@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { whyChooseUs } from "../data/siteData";
 import InteractiveCard from "../shared/InteractiveCard";
+import CertificateModal from "./CertificateModal";
 
 export default function WhyChooseUsSection() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isCertificateModalOpen, setIsCertificateModalOpen] = useState(false);
 
   return (
     <section id="why-us" className="section why-us-section">
@@ -27,7 +29,23 @@ export default function WhyChooseUsSection() {
             </InteractiveCard>
           ))}
         </div>
+
+        <div className="certificate-credential reveal">
+          <button
+            type="button"
+            onClick={() => setIsCertificateModalOpen(true)}
+            className="credential-image-button"
+            aria-label="View DPIIT Certificate"
+          >
+            <img
+              src="/images/IMG-20260821-WA0027.jpg"
+              alt="DPIIT Certificate of Recognition"
+              className="credential-image"
+            />
+          </button>
+        </div>
       </div>
+      <CertificateModal isOpen={isCertificateModalOpen} onClose={() => setIsCertificateModalOpen(false)} />
     </section>
   );
 }

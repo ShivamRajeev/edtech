@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import CertificateModal from "./CertificateModal";
 
 export default function Footer({ onApplyNow }) {
+  const [isCertificateModalOpen, setIsCertificateModalOpen] = useState(false);
+
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
@@ -28,12 +32,21 @@ export default function Footer({ onApplyNow }) {
                 Apply Now
               </button>
             </li>
+            <li>
+              <button
+                type="button"
+                className="footer-link-button blink"
+                onClick={() => setIsCertificateModalOpen(true)}
+              >
+                Government Recognition
+              </button>
+            </li>
           </ul>
         </div>
         <div>
           <h4>Contact</h4>
           <ul>
-            <li>+91 90000 00000</li>
+            <li>+91 98100 60396</li>
             <li>admissions@careerdekho.in</li>
             <li>Your City, India</li>
           </ul>
@@ -66,6 +79,7 @@ export default function Footer({ onApplyNow }) {
         </p>
         <p>© {new Date().getFullYear()} Career Dekho. All rights reserved.</p>
       </div>
+      <CertificateModal isOpen={isCertificateModalOpen} onClose={() => setIsCertificateModalOpen(false)} />
     </footer>
   );
 }
