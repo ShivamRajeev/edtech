@@ -15,7 +15,7 @@ export default function ContactSection() {
               - 000000
             </li>
             <li>
-              <strong>Phone:</strong> +91 90000 00000
+              <strong>Phone:</strong> +91 98100 60396
             </li>
             <li>
               <strong>Email:</strong> admissions@careerdekho.in
