@@ -24,7 +24,7 @@ import { useRevealOnScroll } from "./hooks/useRevealOnScroll";
 function HomePage({ onApplyNow }) {
   return (
     <>
-      <HeroSection />
+      <HeroSection onApplyNow={onApplyNow} />
       <StatsSection />
       <PartnerStrip />
       <ProcessSection />
