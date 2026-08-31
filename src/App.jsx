@@ -15,7 +15,6 @@ import WhyChooseUsSection from "./components/WhyChooseUsSection";
 import PlacementSection from "./components/PlacementSection";
 import FAQSection from "./components/FAQSection";
 import FinalCTASection from "./components/FinalCTASection";
-import ContactSection from "./components/ContactSection";
 import ContactModal from "./components/ContactModal";
 import Footer from "./components/Footer";
 import FloatingActions from "./components/FloatingActions";
@@ -56,7 +55,6 @@ export default function App() {
           <Route path="/why-us" element={<WhyChooseUsSection />} />
           <Route path="/placement" element={<PlacementSection />} />
           <Route path="/faqs" element={<FAQSection />} />
-          <Route path="/contact" element={<ContactSection />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

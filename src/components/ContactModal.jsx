@@ -42,7 +42,7 @@ export default function ContactModal({ isOpen, onClose }) {
           <div className="mb-3 flex items-start justify-between gap-3">
             <div>
               <h3 id="contact-modal-title" className="font-display text-2xl text-[#0b1f3b]">
-                Apply Now
+                Start Your Career
               </h3>
               <p className="mt-1 text-sm text-slate-600">
                 Fill your details and our admissions team will contact you shortly.

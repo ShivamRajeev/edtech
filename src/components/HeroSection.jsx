@@ -10,7 +10,7 @@ export default function HeroSection({ onApplyNow }) {
           <p className="hero-subtext">Learn. Prepare. Get Hired.</p>
           <div className="cta-group">
             <button type="button" className="btn btn-primary" onClick={onApplyNow}>
-              Apply Now
+              Start Your Career
             </button>
           </div>
         </div>

@@ -224,7 +224,7 @@ export default function FounderSection() {
             </div>
 
             <a
-              href="/contact"
+              href="mailto:founder@careerdekho.in"
               className="mt-6 inline-flex items-center rounded-full bg-gradient-to-r from-[#0d9af2] to-[#0f9d83] px-6 py-3 text-sm font-bold tracking-wide text-white shadow-lg transition hover:-translate-y-0.5"
             >
               Connect With Founder

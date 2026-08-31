@@ -62,7 +62,7 @@ export default function ProgramsSection({ onApplyNow }) {
             </div>
           </div>
           <button type="button" className="btn btn-primary" onClick={onApplyNow}>
-            Apply Now
+            Start Your Career
           </button>
         </article>
 
@@ -76,9 +76,9 @@ export default function ProgramsSection({ onApplyNow }) {
             >
               <h3>{program.title}</h3>
               <p>{program.text}</p>
-              <a className="text-link" href="/contact">
+              <button type="button" className="text-link" onClick={onApplyNow}>
                 Enquire Now
-              </a>
+              </button>
             </InteractiveCard>
           ))}
         </div>

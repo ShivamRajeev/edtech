@@ -5,8 +5,7 @@ export const navLinks = [
   { href: "/programs", label: "Programs" },
   { href: "/why-us", label: "Why Choose Us" },
   { href: "/placement", label: "Placement Assistance" },
-  { href: "/faqs", label: "FAQs" },
-  { href: "/contact", label: "Contact Us" }
+  { href: "/faqs", label: "FAQs" }
 ];
 
 export const highlights = [
