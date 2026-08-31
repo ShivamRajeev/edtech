@@ -35,7 +35,7 @@ export default function ContactModal({ isOpen, onClose }) {
       onClick={onClose}
     >
       <div
-        className="contact-modal-card w-full max-w-[680px] overflow-hidden rounded-[20px] border border-slate-200 bg-white shadow-2xl"
+        className="contact-modal-card w-full max-w-[680px] overflow-hidden rounded-[20px] border border-slate-200 bg-white shadow-2x5"
         onClick={(event) => event.stopPropagation()}
       >
         <div className="max-h-[88vh] overflow-y-auto p-4 md:p-6">
