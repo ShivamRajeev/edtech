@@ -104,7 +104,6 @@ export const coreValues = [
   "Continuous Improvement : We continnuously improve our program based on learner and industry needs.",
   "Industry Relevance We communicate clearlyabout our programs, fees opportunities and placement support"
 ];
-
 export const flagshipOutcomes = [
   "Banking and financial services fundamentals",
   "Sales and customer handling skills",
@@ -120,17 +119,14 @@ export const flagshipPlacement = [
   "Interview preparation",
   "Mock interview and feedback",
   "Job opportunity sharing",
-  "Interview co-ordination",
-  "Joining guidance"
+  "Interview co-ordination"
 ];
 
 export const whoThisProgramFor = [
-  "Banking and financial services fundamentals",
-  "Sales and customer handling skills",
-  "Communication and professional etiquette",
-  "Resume building and LinkedIn profile guidance",
-  "Interview preparation and mock interviews",
-  "Workplace readiness and confidence building"
+  "✓ Graduates looking to start their career",
+  "✓ Final year students preparing for employment",
+  "✓ Early-career professionals looking for better opportunities",
+  "✓ Candidates interested in banking, sales, and customer-facing roles",
 ];
 
 export const futurePrograms = [
