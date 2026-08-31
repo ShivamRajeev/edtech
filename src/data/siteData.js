@@ -40,6 +40,19 @@ export const trackDomains = [
   "Professional Development"
 ];
 
+export const hiringPartners = [
+  "HDFC Bank",
+  "ICICI Bank",
+  "Axis Bank",
+  "Bandhan Bank",
+  "Paytm",
+  "Kotak Mahindra Bank",
+  "IndusInd Bank",
+  "Bajaj Finserv",
+  "SBI Cards",
+  "Yes Bank"
+];
+
 export const processSteps = [
   { step: "01", title: "Enquiry", text: "Share your career goals and background." },
   { step: "02", title: "Counselling", text: "Get personalized guidance from career advisors." },
@@ -50,16 +63,16 @@ export const processSteps = [
 
 export const whyPreview = [
   {
-    title: "Industry-Relevant Modules",
+    title: "Industry-Relevant Career Training",
     text: "Curriculum aligned with hiring expectations and role requirements."
   },
   {
-    title: "Interview Preparation Course",
-    text: "Mock interviews, HR rounds, and communication feedback sessions."
+    title: "Practical Learning and Placement",
+    text: "Hands-on assignments, mock interviews, and placement support for real career opportunities."
   },
   {
-    title: "Structured Placement Assistance",
-    text: "Guided support from resume creation to joining formalities."
+    title: "Support for Graduates and Early-Career Professionals",
+    text: "Guidance and mentoring for freshers, final-year students, and early professionals to build job-ready skills."
   }
 ];
 

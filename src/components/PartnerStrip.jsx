@@ -1,15 +1,16 @@
-import { trackDomains } from "../data/siteData";
+import { hiringPartners } from "../data/siteData";
 
 export default function PartnerStrip() {
   return (
-    <section className="partner-strip" aria-label="Career domains and hiring readiness tracks">
-      <div className="container partner-strip-inner">
-        <p>Career tracks aligned with current hiring demand:</p>
-        <ul>
-          {trackDomains.map((domain) => (
-            <li key={domain}>{domain}</li>
+    <section className="partner-strip" aria-label="Hiring partners">
+      <div className="partner-marquee">
+        <div className="partner-marquee-track">
+          {[...hiringPartners, ...hiringPartners].map((partner, index) => (
+            <span className="partner-logo" key={`${partner}-${index}`}>
+              {partner}
+            </span>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );
