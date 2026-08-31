@@ -37,13 +37,14 @@ const founderVisionCards = [
 
 const faculty = [
   {
-    name: "Prof. Rohan Verma",
-    specialization: "Data Science & AI Expert",
-    experience: "11+ Years",
+    name: "Mr. Vasudev Jha",
+    specialization: "Banking & Supply Chain Management Trainer",
+    experience: "6+ Years",
     description:
-      "Guides learners through ML workflows, model deployment, and real-world AI problem solving for business outcomes.",
+      "Vasudev Jha is an experienced Banking and Supply Chain Management professional and Trainer with experties in Banking Operations, Financial Services,Credit Risk and Management, Logistics, Supply Chain & ERP.",
     image:
-      "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=900&q=80"
+      "/images/vasudev_jha_perfect_square (1).png",
+    imageFit: "contain"
   },
   {
     name: "Ms. Kavya Nair",
@@ -178,7 +179,7 @@ export default function FounderSection() {
             <h2 className="font-display text-3xl font-semibold tracking-tight text-academy-900 md:text-4xl">
               Mrs. Sarika
             </h2>
-            <p className="mt-2 font-body text-base font-semibold text-teal-700">Founder &amp; CEO</p>
+            <p className="mt-2 font-body text-base font-semibold text-teal-700">Founder &amp; Director</p>
 
             <div className="mt-6 space-y-4">
               {founderBio.map((paragraph) => (
@@ -306,11 +307,11 @@ export default function FounderSection() {
                 transition={{ duration: 0.25 }}
                 className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card"
               >
-                <div className="relative aspect-[4/3] overflow-hidden">
+                <div className="relative aspect-[4/3] overflow-hidden bg-white">
                   <FallbackImage
                     src={member.image}
                     alt={member.name}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    className={`h-full w-full transition duration-500 group-hover:scale-105 ${member.imageFit === "contain" ? "object-contain" : "object-cover"}`}
                   />
                 </div>
                 <div className="space-y-3 p-5">

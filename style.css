@@ -1128,7 +1128,8 @@ textarea:focus {
   }
 }
 
-.footer-link-button.blink {
+.footer-link-button.blink,
+.blink {
   animation: blink 1s infinite;
 }
 
@@ -1331,7 +1332,7 @@ textarea:focus {
 
   .site-nav {
     position: absolute;
-    top: 76px;
+    top: 100%;
     left: 0;
     right: 0;
     background: var(--navy-900);

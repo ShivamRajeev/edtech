@@ -60,6 +60,7 @@ export default function Footer({ onApplyNow }) {
                 href="https://maps.google.com/maps?q=28.458896674240326,77.03829547520412(Career+Dekho+Office)"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="blink"
               >
                 41, First Floor JMD Galleria, Gurgaon, Haryana, India, Pin:- 122018
               </a>
