@@ -43,7 +43,7 @@ export default function Header({ onApplyNow }) {
           className="btn btn-small btn-primary hide-mobile"
           onClick={onApplyNow}
         >
-          Apply Now
+          Start Your Career
         </button>
       </div>
     </header>

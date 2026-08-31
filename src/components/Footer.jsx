@@ -29,7 +29,7 @@ export default function Footer({ onApplyNow }) {
             </li>
             <li>
               <button type="button" className="footer-link-button" onClick={onApplyNow}>
-                Apply Now
+                Start Your Career
               </button>
             </li>
             <li>
@@ -44,28 +44,43 @@ export default function Footer({ onApplyNow }) {
           </ul>
         </div>
         <div>
-          <h4>Contact</h4>
+          <h4>Contact Us</h4>
           <ul>
-            <li>+91 98100 60396</li>
-            <li>admissions@careerdekho.in</li>
-            <li>Your City, India</li>
+            <li className="footer-contact-item">
+              <span className="footer-contact-icon">📞</span>
+              <span>+91 98100 60396</span>
+            </li>
+            <li className="footer-contact-item">
+              <span className="footer-contact-icon">✉️</span>
+              <span>admissions@careerdekho.in</span>
+            </li>
+            <li className="footer-contact-item">
+              <span className="footer-contact-icon">📍</span>
+              <a
+                href="https://maps.google.com/maps?q=28.458896674240326,77.03829547520412(Career+Dekho+Office)"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                41, First Floor JMD Galleria, Gurgaon, Haryana, India, Pin:- 122018
+              </a>
+            </li>
           </ul>
         </div>
         <div>
           <h4>Follow Us</h4>
           <ul>
             <li>
-              <a href="#" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="#" aria-label="Instagram">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 Instagram
               </a>
             </li>
             <li>
-              <a href="#" aria-label="YouTube">
+              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                 YouTube
               </a>
             </li>

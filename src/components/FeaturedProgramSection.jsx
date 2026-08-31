@@ -24,7 +24,7 @@ export default function FeaturedProgramSection({ onApplyNow }) {
             <li>Fee: Rs. 50,000</li>
           </ul>
           <button type="button" className="btn btn-primary" onClick={onApplyNow}>
-            Apply Now
+            Start Your Career
           </button>
         </div>
       </div>

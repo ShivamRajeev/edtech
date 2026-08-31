@@ -13,7 +13,7 @@ export default function FloatingActions({ onApplyNow }) {
 
       <div className="mobile-action-bar" aria-label="Quick actions">
         <button type="button" onClick={onApplyNow}>
-          Apply Now
+          Start Your Career
         </button>
         <button type="button" onClick={onApplyNow}>
           Talk to Advisor
