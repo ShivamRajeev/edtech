@@ -45,7 +45,7 @@ export default function ProgramsSection({ onApplyNow }) {
                 ))}
               </ul>
               <h3 className="program-audience-heading">Who is this Program For?</h3>
-              <ul>
+              <ul className="check-list">
                 {whoThisProgramFor.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
