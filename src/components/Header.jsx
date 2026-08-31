@@ -36,22 +36,26 @@ export default function Header({ onApplyNow }) {
               {link.label}
             </NavLink>
           ))}
+          {open ? (
+            <button
+              type="button"
+              className="btn btn-small btn-primary mobile-nav-cta"
+              onClick={onApplyNow}
+            >
+              Start Your Career
+            </button>
+          ) : null}
+        </nav>
+
+        {!open ? (
           <button
             type="button"
-            className="btn btn-small btn-primary mobile-nav-cta"
+            className="btn btn-small btn-primary desktop-nav-cta"
             onClick={onApplyNow}
           >
             Start Your Career
           </button>
-        </nav>
-
-        <button
-          type="button"
-          className="btn btn-small btn-primary hide-mobile"
-          onClick={onApplyNow}
-        >
-          Start Your Career
-        </button>
+        ) : null}
       </div>
     </header>
   );
