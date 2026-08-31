@@ -11,10 +11,10 @@ const founderBio = [
 ];
 
 const founderAchievements = [
-  "15+ Years in Learning & Development",
-  "12,000+ Learners Mentored",
-  "150+ Hiring Partnerships Supported",
-  "National Speaker on Career Readiness"
+  "Business Growth & Strategic Leadershipt",
+  "Industry-Aligned Career Development",
+  "Future-Ready Talent & Employability",
+  "Bridging Business Needs with Student Potential"
 ];
 
 const founderVisionCards = [
@@ -47,22 +47,24 @@ const faculty = [
     imageFit: "contain"
   },
   {
-    name: "Ms. Kavya Nair",
-    specialization: "Full Stack Development Mentor",
-    experience: "10+ Years",
+    name: "Ms. Anshita",
+    specialization: "Psychologist Behaviour Trainer",
+    experience: "4+ Years",
     description:
-      "Mentors students in production-grade frontend and backend development with scalable architecture practices.",
+      "Anshita is a Psychologist and Behavioural Trainer who has trained 5,000+ individuals through workshops and learning programs. She has worked with GNIOT Institute of Management Studies (GIMS), Army College of Education, Drishti IAS, and others. Her experiential approach uses activities, reflection, discussions, and role plays to create practical, focused learning experiences",
     image:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=80"
+      "/image/ankita.jpeg",
+          imageFit: "contain"
   },
   {
-    name: "Mr. Nishant Rao",
-    specialization: "Cloud Computing Specialist",
-    experience: "12+ Years",
+    name: "Mr.Chandra Kant Sharma",
+    specialization: "Professional Skill Trainer & Behavioural Coach",
+    experience: "20+ Years",
     description:
-      "Builds cloud-first engineering capability across AWS fundamentals, secure architectures, and cost optimization.",
+      "Strategic Learning & Development Leader with cross-industry expertise in designing and facilitating programs on behavioral skills, self-management, communication, workplace effectiveness, sales enablement, customer handling, and team building. Experienced across BFSI, healthcare, NGOs, and B-schools, enabling individuals and teams to enhance capabilities, performance, and workplace impact.",
     image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80",
+    imageFit: "contain"
   },
   {
     name: "Ms. Aditi Menon",
@@ -73,42 +75,42 @@ const faculty = [
     image:
       "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=900&q=80"
   },
-  {
-    name: "Mr. Imran Sheikh",
-    specialization: "Cyber Security Expert",
-    experience: "13+ Years",
-    description:
-      "Teaches threat modeling, defensive security techniques, and compliance-aware security operations.",
-    image:
-      "https://images.unsplash.com/photo-1562788869-4ed32648eb72?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    name: "Ms. Rhea Kapoor",
-    specialization: "UI/UX Design Mentor",
-    experience: "8+ Years",
-    description:
-      "Helps learners master user research, interaction design, and portfolio-ready digital product design.",
-    image:
-      "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    name: "Mr. Piyush Tandon",
-    specialization: "Software Testing Expert",
-    experience: "10+ Years",
-    description:
-      "Covers modern QA, automation frameworks, and quality engineering practices for enterprise projects.",
-    image:
-      "https://images.unsplash.com/photo-1545167622-3a6ac756afa4?auto=format&fit=crop&w=900&q=80"
-  },
-  {
-    name: "Dr. Sneha Kulkarni",
-    specialization: "Business Analytics Trainer",
-    experience: "14+ Years",
-    description:
-      "Develops strategic analytics thinking with dashboards, storytelling, and insight-led decision frameworks.",
-    image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80"
-  }
+  // {
+  //   name: "Mr. Imran Sheikh",
+  //   specialization: "Cyber Security Expert",
+  //   experience: "13+ Years",
+  //   description:
+  //     "Teaches threat modeling, defensive security techniques, and compliance-aware security operations.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1562788869-4ed32648eb72?auto=format&fit=crop&w=900&q=80"
+  // },
+  // {
+  //   name: "Ms. Rhea Kapoor",
+  //   specialization: "UI/UX Design Mentor",
+  //   experience: "8+ Years",
+  //   description:
+  //     "Helps learners master user research, interaction design, and portfolio-ready digital product design.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=900&q=80"
+  // },
+  // {
+  //   name: "Mr. Piyush Tandon",
+  //   specialization: "Software Testing Expert",
+  //   experience: "10+ Years",
+  //   description:
+  //     "Covers modern QA, automation frameworks, and quality engineering practices for enterprise projects.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1545167622-3a6ac756afa4?auto=format&fit=crop&w=900&q=80"
+  // },
+  // {
+  //   name: "Dr. Sneha Kulkarni",
+  //   specialization: "Business Analytics Trainer",
+  //   experience: "14+ Years",
+  //   description:
+  //     "Develops strategic analytics thinking with dashboards, storytelling, and insight-led decision frameworks.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80"
+  // }
 ];
 
 const fadeUp = {
@@ -126,17 +128,17 @@ function LinkedInIcon() {
     </svg>
   );
 }
-
-function XIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-4 w-4" aria-hidden="true">
-      <path
-        fill="currentColor"
-        d="M18.9 2H22l-6.76 7.73L23.2 22h-6.22l-4.87-6.4L6.5 22H3.4l7.22-8.26L1 2h6.38l4.4 5.8L18.9 2zm-1.09 18h1.72L6.45 3.9H4.6L17.81 20z"
-      />
-    </svg>
-  );
-}
+// 
+// function XIcon() {
+//   return (
+//     <svg viewBox="0 0 24 24" className="h-4 w-4" aria-hidden="true">
+//       <path
+//         fill="currentColor"
+//         d="M18.9 2H22l-6.76 7.73L23.2 22h-6.22l-4.87-6.4L6.5 22H3.4l7.22-8.26L1 2h6.38l4.4 5.8L18.9 2zm-1.09 18h1.72L6.45 3.9H4.6L17.81 20z"
+//       />
+//     </svg>
+//   );
+// }
 
 function MailIcon() {
   return (
@@ -208,13 +210,13 @@ export default function FounderSection() {
               >
                 <LinkedInIcon />
               </a>
-              <a
+              {/* <a
                 href="https://x.com"
                 aria-label="Founder on X"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 bg-white text-academy-800 transition hover:-translate-y-0.5 hover:border-sky-300 hover:text-sky-600"
               >
                 <XIcon />
-              </a>
+              </a> */}
               <a
                 href="mailto:founder@careerdekho.in"
                 aria-label="Email founder"

@@ -1,6 +1,5 @@
  import { useState } from "react";
-import { flagshipOutcomes, flagshipPlacement, futurePrograms, whoThisProgramFor } from "../data/siteData";
-import InteractiveCard from "../shared/InteractiveCard";
+import { flagshipOutcomes, flagshipPlacement, whoThisProgramFor } from "../data/siteData";
 
 export default function ProgramsSection({ onApplyNow }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -32,7 +31,7 @@ export default function ProgramsSection({ onApplyNow }) {
               </span>
             </div>
             <p>
-              <strong>Eligibility:</strong> Graduates, final-year students, and early professionals interested in
+              <strong>Eligibility:</strong> Graduates, final-year students and early - career professionals interested in
               banking, finance, sales, and customer-facing roles.
             </p>
           </div>
@@ -66,7 +65,7 @@ export default function ProgramsSection({ onApplyNow }) {
           </button>
         </article>
 
-        <div className="program-grid">
+        {/* <div className="program-grid">
           {futurePrograms.map((program, index) => (
             <InteractiveCard
               key={program.title}
@@ -81,7 +80,7 @@ export default function ProgramsSection({ onApplyNow }) {
               </button>
             </InteractiveCard>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
