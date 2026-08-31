@@ -36,6 +36,13 @@ export default function Header({ onApplyNow }) {
               {link.label}
             </NavLink>
           ))}
+          <button
+            type="button"
+            className="btn btn-small btn-primary mobile-nav-cta"
+            onClick={onApplyNow}
+          >
+            Start Your Career
+          </button>
         </nav>
 
         <button
