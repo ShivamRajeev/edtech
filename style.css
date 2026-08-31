@@ -738,6 +738,11 @@ ul {
   margin-top: 4rem;
 }
 
+.check-list {
+  list-style: none;
+  padding-left: 0;
+}
+
 .program-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
