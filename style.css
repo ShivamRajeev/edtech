@@ -200,6 +200,10 @@ ul {
   border-bottom: 2px solid var(--accent-green);
 }
 
+.mobile-nav-cta {
+  display: none;
+}
+
 .menu-toggle {
   display: none;
   width: 44px;
@@ -1342,7 +1346,14 @@ textarea:focus {
   }
 
   .site-nav.open {
-    max-height: 380px;
+    max-height: 520px;
+  }
+
+  .mobile-nav-cta {
+    display: inline-flex;
+    width: calc(100% - 2rem);
+    margin: 0.5rem 1rem 1rem;
+    justify-content: center;
   }
 
   .menu-toggle {
