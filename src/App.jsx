@@ -3,7 +3,6 @@ import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import StatsSection from "./components/StatsSection";
-import PartnerStrip from "./components/PartnerStrip";
 import ProcessSection from "./components/ProcessSection";
 import FeaturedProgramSection from "./components/FeaturedProgramSection";
 import WhyPreviewSection from "./components/WhyPreviewSection";
@@ -25,7 +24,6 @@ function HomePage({ onApplyNow }) {
     <>
       <HeroSection onApplyNow={onApplyNow} />
       <StatsSection />
-      <PartnerStrip />
       <ProcessSection />
       <FeaturedProgramSection onApplyNow={onApplyNow} />
       <WhyPreviewSection />

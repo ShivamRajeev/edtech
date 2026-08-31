@@ -1,3 +1,5 @@
+import PartnerStrip from "./PartnerStrip";
+
 export default function HeroSection({ onApplyNow }) {
   return (
     <section id="home" className="hero-section">
@@ -15,6 +17,7 @@ export default function HeroSection({ onApplyNow }) {
           </div>
         </div>
       </div>
+      <PartnerStrip />
     </section>
   );
 }
