@@ -1,4 +1,4 @@
-import { useState } from "react";
+ import { useState } from "react";
 import { flagshipOutcomes, flagshipPlacement, futurePrograms, whoThisProgramFor } from "../data/siteData";
 import InteractiveCard from "../shared/InteractiveCard";
 
@@ -7,6 +7,7 @@ export default function ProgramsSection({ onApplyNow }) {
 
   return (
     <section id="programs" className="section programs-section">
+      <div className="programs-bg"></div>
       <div className="container">
         <div className="section-head reveal">
           <p className="eyebrow">Programs</p>
