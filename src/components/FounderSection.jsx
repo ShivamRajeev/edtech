@@ -11,7 +11,7 @@ const founderBio = [
 ];
 
 const founderAchievements = [
-  "Business Growth & Strategic Leadershipt",
+  "Business Growth & Strategic Leadership",
   "Industry-Aligned Career Development",
   "Future-Ready Talent & Employability",
   "Bridging Business Needs with Student Potential"
@@ -53,8 +53,8 @@ const faculty = [
     description:
       "Anshita is a Psychologist and Behavioural Trainer who has trained 5,000+ individuals through workshops and learning programs. She has worked with GNIOT Institute of Management Studies (GIMS), Army College of Education, Drishti IAS, and others. Her experiential approach uses activities, reflection, discussions, and role plays to create practical, focused learning experiences",
     image:
-      "/image/ankita.jpeg",
-          imageFit: "contain"
+      "/images/ankita.jpeg",
+    imageFit: "contain"
   },
   {
     name: "Mr.Chandra Kant Sharma",
@@ -63,18 +63,10 @@ const faculty = [
     description:
       "Strategic Learning & Development Leader with cross-industry expertise in designing and facilitating programs on behavioral skills, self-management, communication, workplace effectiveness, sales enablement, customer handling, and team building. Experienced across BFSI, healthcare, NGOs, and B-schools, enabling individuals and teams to enhance capabilities, performance, and workplace impact.",
     image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80",
-    imageFit: "contain"
+      "/images/chandra.jpg",
+      imageFit: "contain"
   },
-  {
-    name: "Ms. Aditi Menon",
-    specialization: "DevOps Engineer",
-    experience: "9+ Years",
-    description:
-      "Trains on CI/CD, containerization, and release automation to help teams ship software faster and reliably.",
-    image:
-      "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=900&q=80"
-  },
+ 
   // {
   //   name: "Mr. Imran Sheikh",
   //   specialization: "Cyber Security Expert",
@@ -300,7 +292,7 @@ export default function FounderSection() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {faculty.map((member) => (
               <motion.article
                 key={member.name}
