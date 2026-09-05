@@ -40,6 +40,7 @@ const faculty = [
     name: "Mr.Chandra Kant Sharma",
     specialization: "Professional Skill Trainer & Behavioural Coach",
     experience: "20+ Years",
+    linkedinUrl: "https://www.linkedin.com/in/commcks?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
     description:
       "Strategic Learning & Development Leader with cross-industry expertise in designing and facilitating programs on behavioral skills, self-management, communication, workplace effectiveness, sales enablement, customer handling, and team building. Experienced across BFSI, healthcare, NGOs, and B-schools, enabling individuals and teams to enhance capabilities, performance, and workplace impact.",
     image:
@@ -51,6 +52,7 @@ const faculty = [
     name: "Ms. Anshita",
     specialization: "Psychologist Behaviour Trainer",
     experience: "4+ Years",
+    linkedinUrl: "https://www.linkedin.com/in/anshitaraghav?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
     description:
       "Anshita is a Psychologist and Behavioural Trainer who has trained 5,000+ individuals through workshops and learning programs. She has worked with GNIOT Institute of Management Studies (GIMS), Army College of Education, Drishti IAS, and others. Her experiential approach uses activities, reflection, discussions, and role plays to create practical, focused learning experiences",
     image:
@@ -61,6 +63,7 @@ const faculty = [
     name: "Mr. Vasudev Jha",
     specialization: "Banking & Supply Chain Management Trainer",
     experience: "6+ Years",
+    linkedinUrl: "https://www.linkedin.com/in/vasudev-jha-553457434?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     description:
       "Vasudev Jha is an experienced Banking and Supply Chain Management professional and Trainer with experties in Banking Operations, Financial Services,Credit Risk and Management, Logistics, Supply Chain & ERP.",
     image:
@@ -316,7 +319,9 @@ export default function FounderSection() {
                       <p className="mt-1 text-sm font-semibold text-sky-700">{member.specialization}</p>
                     </div>
                     <a
-                      href="https://www.linkedin.com"
+                      href={member.linkedinUrl || "https://www.linkedin.com"}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       aria-label={`${member.name} on LinkedIn`}
                       className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-slate-300 text-academy-800 transition hover:border-sky-300 hover:text-sky-600"
                     >
