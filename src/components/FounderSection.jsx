@@ -37,15 +37,16 @@ const founderVisionCards = [
 
 const faculty = [
   {
-    name: "Mr. Vasudev Jha",
-    specialization: "Banking & Supply Chain Management Trainer",
-    experience: "6+ Years",
+    name: "Mr.Chandra Kant Sharma",
+    specialization: "Professional Skill Trainer & Behavioural Coach",
+    experience: "20+ Years",
     description:
-      "Vasudev Jha is an experienced Banking and Supply Chain Management professional and Trainer with experties in Banking Operations, Financial Services,Credit Risk and Management, Logistics, Supply Chain & ERP.",
+      "Strategic Learning & Development Leader with cross-industry expertise in designing and facilitating programs on behavioral skills, self-management, communication, workplace effectiveness, sales enablement, customer handling, and team building. Experienced across BFSI, healthcare, NGOs, and B-schools, enabling individuals and teams to enhance capabilities, performance, and workplace impact.",
     image:
-      "/images/vasudev_jha_perfect_square (1).png",
-    imageFit: "contain"
+      "/images/chandra.jpg",
+      imageFit: "contain"
   },
+  
   {
     name: "Ms. Anshita",
     specialization: "Psychologist Behaviour Trainer",
@@ -57,14 +58,14 @@ const faculty = [
     imageFit: "contain"
   },
   {
-    name: "Mr.Chandra Kant Sharma",
-    specialization: "Professional Skill Trainer & Behavioural Coach",
-    experience: "20+ Years",
+    name: "Mr. Vasudev Jha",
+    specialization: "Banking & Supply Chain Management Trainer",
+    experience: "6+ Years",
     description:
-      "Strategic Learning & Development Leader with cross-industry expertise in designing and facilitating programs on behavioral skills, self-management, communication, workplace effectiveness, sales enablement, customer handling, and team building. Experienced across BFSI, healthcare, NGOs, and B-schools, enabling individuals and teams to enhance capabilities, performance, and workplace impact.",
+      "Vasudev Jha is an experienced Banking and Supply Chain Management professional and Trainer with experties in Banking Operations, Financial Services,Credit Risk and Management, Logistics, Supply Chain & ERP.",
     image:
-      "/images/chandra.jpg",
-      imageFit: "contain"
+      "/images/vasudev_jha_perfect_square (1).png",
+    imageFit: "contain"
   },
  
   // {
