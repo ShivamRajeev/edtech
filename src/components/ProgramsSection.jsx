@@ -31,8 +31,14 @@ export default function ProgramsSection({ onApplyNow }) {
               </span>
             </div>
             <p>
-              <strong>Eligibility:</strong> Graduates, final-year students and early - career professionals interested in
+              <strong>Eligibility:</strong> Graduates and early - career professionals interested in
               banking, finance, sales, and customer-facing roles.
+            </p>
+              <p>
+              <strong>CTC:</strong> 2.5 L to 3 L (per annum)
+            </p>
+              <p>
+              <strong>Age Limit:</strong>  28 years
             </p>
           </div>
 
