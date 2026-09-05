@@ -124,7 +124,6 @@ export const flagshipPlacement = [
 
 export const whoThisProgramFor = [
   "✓ Graduates looking to start their career",
-  "✓ Final year students preparing for employment",
   "✓ Early-career professionals looking for better opportunities",
   "✓ Candidates interested in banking, sales, and customer-facing roles",
 ];

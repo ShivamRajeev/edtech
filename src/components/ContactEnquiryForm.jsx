@@ -18,11 +18,16 @@ async function submitToGoogleSheet(payload) {
     return { simulated: true };
   }
 
+  const formBody = new URLSearchParams();
+  Object.entries(payload).forEach(([key, value]) => {
+    formBody.append(key, value ?? "");
+  });
+
   const response = await fetch(GOOGLE_SHEET_WEB_APP_URL, {
     method: "POST",
     mode: "cors",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload)
+    headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
+    body: formBody.toString()
   });
 
   if (!response.ok) {
