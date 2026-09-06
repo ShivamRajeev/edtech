@@ -71,17 +71,17 @@ export default function Footer({ onApplyNow }) {
           <h4>Follow Us</h4>
           <ul>
             <li>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/careerdekho2026/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a href="https://www.instagram.com/careerdekho_?igsi=OHVidXhxNzhrbDBx" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 Instagram
               </a>
             </li>
             <li>
-              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <a href="https://youtube.com/@sarikasharma-f6p?si=9Cj3FJDmIlVX2bVA" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                 YouTube
               </a>
             </li>
