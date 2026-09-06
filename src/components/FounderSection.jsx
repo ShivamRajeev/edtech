@@ -200,7 +200,7 @@ export default function FounderSection() {
 
             <div className="mt-7 flex flex-wrap items-center gap-3">
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/sarika-sharma-3286ab1a8?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
                 aria-label="Founder on LinkedIn"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 bg-white text-academy-800 transition hover:-translate-y-0.5 hover:border-sky-300 hover:text-sky-600"
               >
@@ -214,7 +214,7 @@ export default function FounderSection() {
                 <XIcon />
               </a> */}
               <a
-                href="mailto:founder@careerdekho.in"
+                href="mailto:Sarika.sharma@career-dekho.com"
                 aria-label="Email founder"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 bg-white text-academy-800 transition hover:-translate-y-0.5 hover:border-sky-300 hover:text-sky-600"
               >
