@@ -690,12 +690,12 @@ ul {
 }
 
 .programs-section .section-head h2 {
-  color: #0b0b0b;
+  color: var(--white);
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.16);
 }
 
 .programs-section .section-head p {
-  color: rgba(0, 0, 0, 0.96);
+  color: var(--white);
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
@@ -1150,6 +1150,10 @@ textarea:focus {
 
 .footer-contact-icon {
   flex-shrink: 0;
+}
+
+.footer-contact-email {
+  white-space: nowrap;
 }
 
 .footer-link-button {

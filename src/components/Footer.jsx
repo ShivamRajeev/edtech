@@ -48,11 +48,11 @@ export default function Footer({ onApplyNow }) {
           <ul>
             <li className="footer-contact-item">
               <span className="footer-contact-icon">📞</span>
-              <span>+91 98100 60396</span>
+              <span>+91 9610851242</span>
             </li>
             <li className="footer-contact-item">
               <span className="footer-contact-icon">✉️</span>
-              <span>admissions@careerdekho.in</span>
+              <span className="footer-contact-email">support@career-dekho.com</span>
             </li>
             <li className="footer-contact-item">
               <span className="footer-contact-icon">📍</span>
