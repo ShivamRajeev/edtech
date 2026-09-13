@@ -109,13 +109,13 @@ export const flagshipOutcomes = [
   "Sales and customer handling skills",
   "Communication and professional etiquette",
   "Resume building and LinkedIn profile guidance",
-  "Interview preparation and mock interviews",
-  "Workplace readiness and confidence building"
+ // "Interview preparation and mock interviews",
+ // "Workplace readiness and confidence building"
 ];
 
 export const flagshipPlacement = [
   "Career counselling",
-  "Resume & profile preparation",
+  "Resume &  profile preparation",
   "Interview preparation",
   "Mock interview and feedback",
   "Job opportunity sharing",

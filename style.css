@@ -732,6 +732,12 @@ ul {
   margin-bottom: 0.65rem;
 }
 
+.program-brochure-link {
+  margin-left: 0.65rem;
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
 .flagship {
   position: relative;
   margin-bottom: 1.2rem;
