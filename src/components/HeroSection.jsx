@@ -1,4 +1,4 @@
-import PartnerStrip from "./PartnerStrip";
+// import PartnerStrip from "./PartnerStrip";
 
 export default function HeroSection({ onApplyNow }) {
   return (
@@ -17,7 +17,7 @@ export default function HeroSection({ onApplyNow }) {
           </div>
         </div>
       </div>
-      <PartnerStrip />
+      {/* <PartnerStrip /> */}
     </section>
   );
 }
