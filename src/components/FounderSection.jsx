@@ -37,6 +37,16 @@ const founderVisionCards = [
 
 const faculty = [
   {
+    name: "Akanksha Singh",
+    specialization: "Corporate Trainer | Training & Development Specialist | Instructional Design",
+    experience: "8+ Years",
+    linkedinUrl: "https://www.linkedin.com",
+    description:
+      "Training-focused L&D professional with 8+ years delivering soft skills, sales, and employability training across EdTech, Banking, and FinTech. Proven record of training 1000+ learners and conducting 150+ employee inductions and onboarding sessions, backed by strong instructional design and training module/content development skills — including curriculum design, call scripts, and role-play assessments — that improve conversion rates and reduce drop-offs.",
+    image: "/images/Akansha_Singh.png",
+    imageFit: "contain"
+  },
+  {
     name: "Mr.Chandra Kant Sharma",
     specialization: "Professional Skill Trainer & Behavioural Coach",
     experience: "20+ Years",
@@ -296,7 +306,7 @@ export default function FounderSection() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-4">
             {faculty.map((member) => (
               <motion.article
                 key={member.name}
@@ -305,7 +315,7 @@ export default function FounderSection() {
                 transition={{ duration: 0.25 }}
                 className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card"
               >
-                <div className="relative aspect-[4/3] overflow-hidden bg-white">
+                <div className="relative aspect-[4/3] overflow-hidden bg-[#f4f7fb]">
                   <FallbackImage
                     src={member.image}
                     alt={member.name}
