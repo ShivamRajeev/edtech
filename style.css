@@ -734,8 +734,9 @@ ul {
 
 .program-brochure-link {
   margin-left: 0.65rem;
-  border-color: var(--accent-blue);
-  color: var(--accent-blue);
+  border-color: var(--navy-900);
+  background: var(--navy-900);
+  color: var(--white);
 }
 
 .flagship {
@@ -758,6 +759,16 @@ ul {
 
 .program-top p {
   margin-top: 0.5rem;
+}
+
+.batch-start-highlight {
+  display: inline-block;
+  margin: 0.8rem 0 0.2rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid var(--accent-green);
+  border-radius: var(--radius-pill);
+  background: rgba(42, 157, 143, 0.12);
+  color: var(--navy-800);
 }
 
 .program-meta {
