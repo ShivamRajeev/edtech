@@ -57,7 +57,7 @@ export default function Footer({ onApplyNow }) {
             <li className="footer-contact-item">
               <span className="footer-contact-icon">📍</span>
               <a
-                href="https://maps.google.com/maps?q=28.458896674240326,77.03829547520412(Career+Dekho+Office)"
+                href="https://maps.google.com/maps?q=28.420552614630523,77.0386140757541(Career+Dekho+Office)"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="blink"
