@@ -40,7 +40,7 @@ const faculty = [
     name: "Akanksha Singh",
     specialization: "Corporate Trainer | Training & Development Specialist | Instructional Design",
     experience: "8+ Years",
-    linkedinUrl: "https://www.linkedin.com",
+    linkedinUrl: "https://www.linkedin.com/in/akanksha-singh-836015191?utm_source=share_via&utm_content=profile&utm_medium=member_android__;!!D5WlZnHMtQ!Tn15oYMdI5e-9JIHHM_6sd5nTSJBKyUZaOpykBYaiXHDUsHPITR6kXg0VoRjJvWgv249cIQWoEycjMD3VoAYSv7VOuf8vNQM$",
     description:
       "Training-focused L&D professional with 8+ years delivering soft skills, sales, and employability training across EdTech, Banking, and FinTech. Proven record of training 1000+ learners and conducting 150+ employee inductions and onboarding sessions, backed by strong instructional design and training module/content development skills — including curriculum design, call scripts, and role-play assessments — that improve conversion rates and reduce drop-offs.",
     image: "/images/Akansha_Singh.png",

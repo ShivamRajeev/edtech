@@ -5,7 +5,7 @@ export default function ProgramsSection({ onApplyNow }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const brochurePath = "/images/businessBrocher.jpeg";
   const customerBrochurePath = "/images/customerSupport.jpeg";
-    const ManagementBrocher = "/images/management.jpg";
+    const ManagementBrocher = "/images/Managment_Trainee.pdf";
 
   const handleBrochureDownload = async (event, downloadPath, fileName) => {
     event.preventDefault();
@@ -24,7 +24,7 @@ export default function ProgramsSection({ onApplyNow }) {
       document.body.appendChild(downloadLink);
       downloadLink.click();
       downloadLink.remove();
-      URL.revokeObjectURL(downloadUrl);
+      window.setTimeout(() => URL.revokeObjectURL(downloadUrl), 1000);
     } catch {
       window.location.href = downloadPath;
     }
@@ -126,9 +126,9 @@ export default function ProgramsSection({ onApplyNow }) {
           <a
             className="btn btn-outline program-brochure-link"
             href={ManagementBrocher}
-            download="Management-banner.jpeg"
+            download="Managment_Trainee.pdf"
             onClick={(event) =>
-              handleBrochureDownload(event, ManagementBrocher, "Management-banner.jpeg")
+              handleBrochureDownload(event, ManagementBrocher, "Managment_Trainee.pdf")
             }
           >
             Download Brochure
@@ -226,15 +226,15 @@ export default function ProgramsSection({ onApplyNow }) {
                 <strong>Mode:</strong> Live Online
               </span>
               <span>
-                <strong>Fee:</strong> Rs. 70,000
+                <strong>Fee:</strong> Rs. 85,000
               </span>
             </div>
              <div className="program-meta">
              <span>
-                <strong>Eligibility:</strong> Male/Female
+                <strong>Eligibility:</strong> 12th Pass
               </span>
               <span>
-                <strong>Age Limit:</strong> 28 years
+                <strong>Age Limit:</strong> 21 to 38 years
               </span>
               <span>
                 <strong>Qualification:</strong>Graduates
@@ -244,7 +244,10 @@ export default function ProgramsSection({ onApplyNow }) {
               <strong>Eligibility:</strong> Male &Female both can apply
             </p> */}
               <p>
-              <strong>CTC:</strong> 2.5 LPA to 3.5 LPA
+              <strong>CTC:</strong> 2.25 LPA to 3.5 LPA
+            </p>
+            <p>
+              <strong>No. Of Batch:</strong> 2
             </p>
               {/* <p>
               <strong>Age Limit:</strong>  28 years
