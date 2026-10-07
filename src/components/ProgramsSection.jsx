@@ -231,13 +231,13 @@ export default function ProgramsSection({ onApplyNow }) {
             </div>
              <div className="program-meta">
              <span>
-                <strong>Eligibility:</strong> 12th Pass
+                <strong>Eligibility:</strong> Male/Female
               </span>
               <span>
                 <strong>Age Limit:</strong> 21 to 38 years
               </span>
               <span>
-                <strong>Qualification:</strong>Graduates
+                <strong>Qualification:</strong>12th Pass
               </span>
              </div>
             {/* <p>
