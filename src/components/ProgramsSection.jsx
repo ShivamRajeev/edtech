@@ -3,8 +3,8 @@ import { flagshipOutcomes, flagshipPlacement } from "../data/siteData";
 
 export default function ProgramsSection({ onApplyNow }) {
   const [activeIndex, setActiveIndex] = useState(0);
-  const brochurePath = "/images/businessBrocher.jpeg";
-  const customerBrochurePath = "/images/customerSupport.jpeg";
+  const brochurePath = "/images/BankingBrochure.pdf";
+  const customerBrochurePath = "/images/CustomerSupport.pdf";
     const ManagementBrocher = "/images/Managment_Trainee.pdf";
 
   const handleBrochureDownload = async (event, downloadPath, fileName) => {
@@ -208,7 +208,7 @@ export default function ProgramsSection({ onApplyNow }) {
             className="btn btn-outline program-brochure-link"
             href={brochurePath}
             download="business-brochure.jpeg"
-            onClick={(event) => handleBrochureDownload(event, brochurePath, "business-brochure.jpeg")}
+            onClick={(event) => handleBrochureDownload(event, brochurePath, "business-brochure.pdf")}
           >
             Download Brochure
           </a>
@@ -289,9 +289,9 @@ export default function ProgramsSection({ onApplyNow }) {
           <a
             className="btn btn-outline program-brochure-link"
             href={customerBrochurePath}
-            download="customer-support-brochure.jpeg"
+            download="customer-support-brochure.pdf"
             onClick={(event) =>
-              handleBrochureDownload(event, customerBrochurePath, "customer-support-brochure.jpeg")
+              handleBrochureDownload(event, customerBrochurePath, "customer-support-brochure.pdf")
             }
           >
             Download Brochure

@@ -81,7 +81,7 @@ export default function Footer({ onApplyNow }) {
               </a>
             </li>
             <li>
-              <a href="https://youtube.com/@sarikasharma-f6p?si=9Cj3FJDmIlVX2bVA" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <a href="https://youtube.com/@careerdekho-n9l?si=rC79yKvLtL0fCaU6" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                 YouTube
               </a>
             </li>
