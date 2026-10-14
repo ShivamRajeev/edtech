@@ -2054,6 +2054,56 @@ textarea:focus {
     font-size: 1rem;
   }
 
+  .programs-section {
+    padding-block: 2.5rem;
+  }
+
+  .programs-section .container {
+    width: min(100% - 1.5rem, 1180px);
+    min-height: 0;
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .programs-section .section-head {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 1.25rem;
+    padding: 0;
+    transform: none;
+    text-align: left;
+  }
+
+  .programs-section .section-head h2 {
+    font-size: clamp(1.55rem, 7vw, 2rem);
+  }
+
+  .program-card {
+    width: 100%;
+    margin: 0 0 1rem;
+    padding: 1.1rem;
+    overflow-wrap: anywhere;
+  }
+
+  .program-tag {
+    position: static;
+    display: inline-flex;
+    margin-bottom: 0.75rem;
+  }
+
+  .program-meta {
+    gap: 0.35rem 0.8rem;
+  }
+
+  .program-columns {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .program-brochure-link {
+    margin: 0.65rem 0 0;
+  }
+
   .highlight-tags span,
   .hero-trust span {
     font-size: 0.74rem;
