@@ -93,6 +93,7 @@ export default function Footer({ onApplyNow }) {
           Placement assistance is subject to successful course completion, student performance, eligibility criteria,
           and hiring partner requirements.
         </p>
+        <p>Designed. Built. Delivered by web.perfectpresent.in</p>
         <p>© {new Date().getFullYear()} Career Dekho. All rights reserved.</p>
       </div>
       <CertificateModal isOpen={isCertificateModalOpen} onClose={() => setIsCertificateModalOpen(false)} />
